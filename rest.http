@@ -1,0 +1,30 @@
+GET http://localhost:6000
+
+### login route
+POST  http://localhost:6000/auth/login
+## send the header 
+Content-Type: application/json
+
+{
+    "email":"skyadav478645@gmail.com",
+    "password":"12345672"
+   
+  
+}
+
+
+### register route
+POST  http://localhost:6000/auth/register 
+Content-Type: application/json
+
+{
+   "email":"skyadav478645@gmail.com",
+    "password":"12345672"
+    
+}
+
+### refreseh route
+POST  http://localhost:6000/auth/refreshtoken 
+
+### logout route
+DELETE  http://localhost:6000/auth/logout
